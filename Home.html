@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taachi's Travels</title>
+  <link rel="icon" href="logo03.avif">
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Custom CSS */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .nav-link {
+      margin-right: 15px;
+      font-size: 1rem;
+    }
+
+    .nav-link:hover {
+      color: #0d6efd !important;
+      font-weight: 500;
+    }
+
+    .form-control {
+      width: 250px;
+    }
+
+    .btn-outline-success:hover {
+      background-color: #198754;
+      color: white;
+    }
+    
+.hero-section{
+    background-size: cover;
+    height: 500px;
+    /* background-position: inherit; */
+    background-image: url("https://www.freevector.com/uploads/vector/preview/12939/FreeVector-Travel-Background.jpg");
+}
+.hero-content{
+    padding-top: 9rem;
+    padding-left: 8rem;
+    color: white;
+}
+.hero-button{
+    margin-top: 1rem;
+    height: 50px;
+    background-color: #ff149352;
+    color: white !important;
+    border-radius: 8px;
+    border-color: #ff149352;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* padding: 11px !important; */
+    font-size: 18px !important;
+    margin-left: 8rem;
+}
+.hero-button:hover {
+    transform: scale(1.1); /* Scale the button by 10% on hover */
+}
+
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Nav Bar starts here -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Home.html">Taachi's Travels</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Packages.html">Packages</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Holidays Theme
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Seasonal Package</a></li>
+              <li><a class="dropdown-item" href="#">Advanture</a></li>
+              <li><a class="dropdown-item" href="#">Family</a></li>
+              <li><a class="dropdown-item" href="#">Nature</a></li>
+              <li><a class="dropdown-item" href="#">HoneyMoon</a></li>
+              <li><a class="dropdown-item" href="#">WildLife</a></li>
+              <li><a class="dropdown-item" href="#">Friends</a></li>
+              <li><a class="dropdown-item" href="#">Water Activities</a></li>
+              <li><a class="dropdown-item" href="#">Religious</a></li>
+
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link" href="#">Abous Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Nav Bar ends here -->
+
+  <!-- Bootstrap Bundle JS (with Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- slider section -->
+    <div class="hero-section">
+        <div class="hero-content">
+          <h2 class="mb-4">Travel the World !</h2>
+          <p class="hero-para">
+           “Travel is the only thing you buy that makes you richer”</p>
+        </div>
+        <a href="signin.html"
+          ><button class="hero-button" id="#">SignIn Now</button></a>
+      </div>
+      <!-- slider section -->
+
+      <!-- card section starts here -->
+      <div class="Row">
+        <div class="gallery-image">
+            <div class="img-box">
+              <img src="India.jpeg" alt="India" />
+              <div class="transparent-box">
+                <div class="caption">
+                  <p>India</p>
+                  <p class="opacity-low">20% Off</p>
+                </div>
+              </div>
+            </div>
+            <div class="img-box">
+              <img src="dubai.jpg" alt="Dubai" />
+              <div class="transparent-box">
+                <div class="caption">
+                  <p>Dubai</p>
+                  <p class="opacity-low">Free Stay for 1 Night </p>
+                </div>
+              </div>
+            </div>
+            <div class="img-box">
+              <img src="paris.jpeg" alt="Paris" />
+              <div class="transparent-box">
+                <div class="caption">
+                  <p>Paris</p>
+                  <p class="opacity-low">Special CPMBO</p>
+                </div>
+              </div>
+            </div>
+            <div class="img-box">
+              <img src="austrila.jpeg" alt="Austrila" />
+              <div class="transparent-box">
+                <div class="caption">
+                  <p>Austrila</p>
+                  <p class="opacity-low">Restaurant Combo</p>
+                </div>
+              </div>
+            </div>
+            <div class="img-box">
+              <img src="londan.jpeg" alt="Londan" />
+              <div class="transparent-box">
+                <div class="caption">
+                  <p>Londan</p>
+                  <p class="opacity-low">25% OFF</p>
+                </div>
+              </div>
+            </div>
+            <div class="img-box">
+              <img src="Thailand_Featured.webp" alt="Thailand" />
+              <div class="transparent-box">
+                <div class="caption">
+                  <p>Thailand</p>
+                  <p class="opacity-low">LIMITED OFFERS</p>
+                </div>
+              </div>
+            </div>
+            <div class="img-box">
+              <img src="switzerland.jpeg" alt="Thailand" />
+              <div class="transparent-box">
+                <div class="caption">
+                  <p>switzerland</p>
+                  <p class="opacity-low">LIMITED OFFERS</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card section Ends here -->
+</body>
+</html>

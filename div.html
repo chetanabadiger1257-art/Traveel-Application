@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    fieldset{
+        
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .grp{
+            margin-left: 200px;
+            margin-top: 25px;
+        }
+</style>
+
+</head>
+<body>
+    <fieldset>
+        <legend>Student Registration Form</legend>
+
+<table>
+    <tr>
+        <td>
+            <label for="sid">S_ID</label>    
+        </td>
+        <td>
+            <input type="number" placeholder="Enter your S_ID" id="sid"><br>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label for="fname">First Name</label>   
+        </td>
+        <td>
+            <input type="text" placeholder="First_Name" id="fname"><br>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label for="fname">Last Name</label> 
+        </td>
+        <td>
+            <input type="text" placeholder="Last_Name" id="fname"><br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            
+                <label for="">States</label>
+                
+        </td>
+        <td>
+            <div class="form-group">
+                <input list="st">
+                <datalist id="st">
+                    <option>KA</option>
+                    <option>TN</option>
+                    <option>AP</option>
+                    <option>MH</option>
+                    <option>KL</option>
+                </datalist>
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+        <div class="grp">
+            <input type="submit" value="Submit">
+        </div>
+
+        
+    </fieldset>
+</body>
+</html>
